@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Quicksand&family=Saira&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Saira', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #153677, #4e085f);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.to-do {
+    background-color: azure;
+    width: 500px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 15px;
+    /* box-shadow: 0px 10px 20px 10px rgba(146, 145, 150, 0.4); */
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 10px;
+}
+
+img {
+    height: 40px;
+    width: 50px;
+}
+
+#input {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    text-align: left;
+    padding: 15px;
+    margin: 10px;
+    width: 70%;
+    font-size: 15px;
+}
+
+.btn {
+    padding: 14px;
+    background-color: crimson;
+    border-radius: 40px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+
+ul li {
+    text-align: left;
+    list-style: none;
+    padding: 12px 8px 12px 25px;
+    position: relative;
+}
+
+ul li::before {
+    content: ' ';
+    position: absolute;
+    background-image: url("unchecked.png");
+    height: 28px;
+    width: 28px;
+    background-size: cover;
+    background-position: center;
+    top: 11px;
+    left: -19px;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url("checked.png");
+}
+
+ul li span {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+ul li span:hover{
+    background-color: rgb(185, 175, 175);
+    border-radius: 30px;
+}
